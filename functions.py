@@ -21,7 +21,7 @@ from langchain_core.messages import HumanMessage
 
 # Connect to Supabase
 def connect_db():
-    db_url = f"postgresql+psycopg2://{os.getenv('SUPABASE_USER')}:{os.getenv('SUPABASE_PASSWORD')}@{os.getenv('SUPABASE_HOST')}:{os.getenv('SUPABASE_PORT')}/{os.getenv('SUPABASE_DB')}"
+    db_url = f"postgresql+psycopg2://{st.secrets('SUPABASE_USER')}:{st.secrets('SUPABASE_PASSWORD')}@{st.secrets('SUPABASE_HOST')}:{st.secrets('SUPABASE_PORT')}/{st.secrets('SUPABASE_DB')}"
     engine = create_engine(db_url)
     return engine
 
