@@ -363,7 +363,7 @@ with matching:
         model="gpt-4o",  # Specify model version (e.g., gpt-4 or gpt-3.5-turbo)
         temperature=0,
         max_tokens=2000,
-        openai_api_key=os.getenv("OPENAI_API_KEY")
+        openai_api_key=st.secrets("OPENAI_API_KEY")
     )
 
     query_providers = """SELECT DISTINCT ON (provider_id)
@@ -574,7 +574,7 @@ with matching:
     # context_str = json.dumps(context)
 
     # # Initialize LLM and memory
-    # llm = ChatOpenAI(model="gpt-4o", temperature=0, openai_api_key=os.getenv("OPENAI_API_KEY"))
+    # llm = ChatOpenAI(model="gpt-4o", temperature=0, openai_api_key=st.secrets("OPENAI_API_KEY"))
     # memory = ConversationBufferMemory(return_messages=True)
 
     # # Prompt template
