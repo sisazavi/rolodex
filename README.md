@@ -117,13 +117,3 @@ We welcome contributions! To suggest improvements:
 1. Fork the repository
 2. Create a feature branch
 3. Submit a pull request with a detailed explanation
-
----
-
-## 📄 License
-
-MIT License. See `LICENSE` file for more information.
-
----
-
-Let me know if you'd like me to generate a `LICENSE`, `.gitignore`, or Docker setup next.
