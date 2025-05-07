@@ -54,7 +54,7 @@ matplotlib-inline==0.1.7
 multidict==6.4.3
 narwhals==1.36.0
 nest-asyncio==1.6.0
-numpy==2.2.5
+numpy
 openai==1.76.0
 orjson==3.10.17
 packaging==24.2
@@ -83,7 +83,6 @@ pytest-mock==3.14.0
 python-dateutil==2.9.0.post0
 python-dotenv==1.1.0
 pytz==2025.2
-pywin32==308
 PyYAML==6.0.2
 pyzmq==26.2.0
 realtime==2.4.3
